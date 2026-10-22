@@ -1,0 +1,21 @@
+[package]
+name = "ccbolt"
+version = "0.1.0"
+edition = "2021"
+description = "A fast compiler cache for C/C++ builds"
+license = "MIT"
+repository = "https://github.com/r7shekhawat/ccbolt"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+blake3 = "1"
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+bincode = "1"
+walkdir = "2"
+dirs = "6"
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"
